@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Latihan 2 BloodShare</string>
+    <string name="app_name">BloodShare</string>
+    <string name="hello_login_fragment">Hello login fragment</string>
 </resources>
