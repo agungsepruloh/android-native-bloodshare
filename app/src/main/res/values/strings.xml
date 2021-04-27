@@ -9,4 +9,15 @@
     <string name="does_not_have_account_register">Doesn\'t have account? <b>Register</b></string>
     <string name="welcome_logo">Welcome Logo</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="retype_password">Retype Password</string>
+    <string name="personal">Personal</string>
+    <string name="organization">Organization</string>
+    <string name="home_address">Home Address</string>
+    <string name="agree_with_terms_and_conditions">Agree with Terms and Conditions</string>
+    <string name="register">Register</string>
+    <string name="default_location">Default Location</string>
 </resources>

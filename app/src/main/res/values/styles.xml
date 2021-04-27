@@ -1,13 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="BaseTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
         <!-- Theme customization. -->
-        <item name="windowNoTitle">true</item>
+        <!-- <item name="windowNoTitle">true</item> -->
+        <!-- <item name="windowActionBar">false</item> -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="actionBarStyle">@style/ActionBar.Solid.BaseTheme</item>
+    </style>
+
+    <style name="BlueTheme" parent="BaseTheme">
+        <!-- Theme customization. -->
         <item name="android:textColor">@color/white</item>
         <item name="android:textColorHint">@color/white</item>
         <item name="android:textCursorDrawable">@null</item>
+    </style>
+
+    <style name="WhiteTheme" parent="BaseTheme">
+        <!-- Theme customization. -->
+        <item name="android:textColor">@color/separator</item>
+        <item name="android:textColorHint">@color/separator</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+
+    <style name="ActionBar.Solid.BaseTheme" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="background">@drawable/ic_header</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
     </style>
 </resources>
