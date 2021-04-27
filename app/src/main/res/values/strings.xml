@@ -20,4 +20,7 @@
     <string name="agree_with_terms_and_conditions">Agree with Terms and Conditions</string>
     <string name="register">Register</string>
     <string name="default_location">Default Location</string>
+    <string name="almost_there">Almost There</string>
+    <string name="greeting_after_registration">Thank you for registering with us. One more step, you need to check your email to activate your account.</string>
+    <string name="verify">Verify</string>
 </resources>
