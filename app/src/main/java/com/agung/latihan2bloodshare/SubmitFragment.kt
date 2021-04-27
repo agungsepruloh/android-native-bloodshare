@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.Navigation
 import com.agung.latihan2bloodshare.databinding.FragmentSubmitBinding
 
 /**
@@ -23,6 +24,10 @@ class SubmitFragment : Fragment() {
 
         val binding = DataBindingUtil.inflate<FragmentSubmitBinding>(
             inflater, R.layout.fragment_submit, container, false
+        )
+
+        binding.verifyBtn.setOnClickListener(
+            Navigation.createNavigateOnClickListener(R.id.action_submitFragment_to_verifyFragment)
         )
 
         return binding.root

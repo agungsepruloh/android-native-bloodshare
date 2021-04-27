@@ -27,5 +27,14 @@
         android:id="@+id/submitFragment"
         android:name="com.agung.latihan2bloodshare.SubmitFragment"
         android:label="Submitted"
-        tools:layout="@layout/fragment_submit" />
+        tools:layout="@layout/fragment_submit" >
+        <action
+            android:id="@+id/action_submitFragment_to_verifyFragment"
+            app:destination="@id/verifyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/verifyFragment"
+        android:name="com.agung.latihan2bloodshare.VerifyFragment"
+        android:label="fragment_verify"
+        tools:layout="@layout/fragment_verify" />
 </navigation>
