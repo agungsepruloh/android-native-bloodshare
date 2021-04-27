@@ -1,17 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".LoginFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/space_large"
+        android:paddingEnd="@dimen/space_large">
+
+        <ImageView
+            android:id="@+id/welcomeLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_huge"
+            android:contentDescription="@string/welcome_logo"
+            android:src="@drawable/ic_welcome_logo" />
+
+        <EditText
+            android:id="@+id/usernameField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_large"
+            android:background="@drawable/form_style"
+            android:ems="10"
+            android:hint="@string/username"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/passwordField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_large"
+            android:background="@drawable/form_style"
+            android:ems="10"
+            android:hint="@string/password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style"
+            android:text="@string/login" />
 
         <TextView
+            android:id="@+id/orTxt"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/hello_login_fragment" />
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/space_small"
+            android:text="@string/or"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/facebookBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style"
+            android:drawableStart="@drawable/ic_welcome_fb_login"
+            android:gravity="center_vertical"
+            android:paddingStart="70dp"
+            android:paddingEnd="70dp"
+            android:text="@string/connect_with_facebook" />
+
+        <TextView
+            android:id="@+id/registerTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_small"
+            android:text="@string/does_not_have_account_register"
+            android:textAlignment="center" />
 
     </LinearLayout>
 
