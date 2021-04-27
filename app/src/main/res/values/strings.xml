@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">BloodShare</string>
     <string name="hello_login_fragment">Hello login fragment</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="or">OR</string>
+    <string name="connect_with_facebook">Connect with Facebook</string>
+    <string name="does_not_have_account_register">Doesn\'t have account? <b>Register</b></string>
+    <string name="welcome_logo">Welcome Logo</string>
 </resources>
