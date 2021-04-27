@@ -11,7 +11,8 @@
         android:gravity="center"
         android:orientation="vertical"
         android:paddingStart="@dimen/space_large"
-        android:paddingEnd="@dimen/space_large">
+        android:paddingEnd="@dimen/space_large"
+        android:theme="@style/BlueTheme">
 
         <ImageView
             android:id="@+id/welcomeLogo"
@@ -26,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/space_large"
-            android:background="@drawable/form_style"
+            android:background="@drawable/blue_form"
             android:ems="10"
             android:hint="@string/username"
             android:importantForAutofill="no"
@@ -38,7 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/space_large"
-            android:background="@drawable/form_style"
+            android:background="@drawable/blue_form"
             android:ems="10"
             android:hint="@string/password"
             android:importantForAutofill="no"
@@ -49,7 +50,7 @@
             android:id="@+id/loginBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_style"
+            android:background="@drawable/blue_button"
             android:text="@string/login" />
 
         <TextView
@@ -64,7 +65,7 @@
             android:id="@+id/facebookBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_style"
+            android:background="@drawable/blue_button"
             android:drawableStart="@drawable/ic_welcome_fb_login"
             android:gravity="center_vertical"
             android:paddingStart="70dp"

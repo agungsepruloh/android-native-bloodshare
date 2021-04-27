@@ -1,12 +1,14 @@
 package com.agung.latihan2bloodshare
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
+import android.widget.SpinnerAdapter
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.Fragment
 import com.agung.latihan2bloodshare.databinding.FragmentRegisterBinding
 
 /**
@@ -18,12 +20,26 @@ class RegisterFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
+        (activity as AppCompatActivity?)!!.supportActionBar!!.show()
 
         val binding = DataBindingUtil.inflate<FragmentRegisterBinding>(
             inflater, R.layout.fragment_register, container, false
         )
 
+        binding.bloodType.adapter = buildAdapter(R.array.blood_type)
+        binding.unknown.adapter = buildAdapter(R.array.unknown)
+        binding.job.adapter = buildAdapter(R.array.job)
+
         return binding.root
+    }
+
+    private fun buildAdapter(resourceId: Int) : SpinnerAdapter {
+        ArrayAdapter
+            .createFromResource(requireContext(), resourceId, android.R.layout.simple_spinner_item)
+            .also { adapter ->
+                adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+                return adapter
+            }
     }
 }
