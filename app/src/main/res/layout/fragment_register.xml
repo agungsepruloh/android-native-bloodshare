@@ -175,7 +175,7 @@
                 android:text="@string/agree_with_terms_and_conditions" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/registerBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/white_button"

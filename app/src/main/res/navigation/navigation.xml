@@ -18,5 +18,14 @@
         android:id="@+id/registerFragment"
         android:name="com.agung.latihan2bloodshare.RegisterFragment"
         android:label="Register"
-        tools:layout="@layout/fragment_register" />
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_submitFragment"
+            app:destination="@id/submitFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/submitFragment"
+        android:name="com.agung.latihan2bloodshare.SubmitFragment"
+        android:label="Submitted"
+        tools:layout="@layout/fragment_submit" />
 </navigation>

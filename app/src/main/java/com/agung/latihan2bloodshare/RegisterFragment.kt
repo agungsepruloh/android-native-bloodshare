@@ -9,6 +9,7 @@ import android.widget.SpinnerAdapter
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
 import com.agung.latihan2bloodshare.databinding.FragmentRegisterBinding
 
 /**
@@ -30,6 +31,10 @@ class RegisterFragment : Fragment() {
         binding.bloodType.adapter = buildAdapter(R.array.blood_type)
         binding.unknown.adapter = buildAdapter(R.array.unknown)
         binding.job.adapter = buildAdapter(R.array.job)
+
+        binding.registerBtn.setOnClickListener(
+            Navigation.createNavigateOnClickListener(R.id.action_registerFragment_to_submitFragment)
+        )
 
         return binding.root
     }
