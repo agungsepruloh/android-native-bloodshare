@@ -23,6 +23,7 @@
         <item name="android:textColor">@color/separator</item>
         <item name="android:textColorHint">@color/separator</item>
         <item name="android:textCursorDrawable">@null</item>
+        <item name="android:background">@color/white</item>
     </style>
 
     <style name="ActionBar.Solid.BaseTheme" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
@@ -39,5 +40,28 @@
     <style name="Info">
         <item name="android:textAlignment">center</item>
         <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="name_style">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="count_info">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="feature_name">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="feature_desc">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#808284</item>
     </style>
 </resources>

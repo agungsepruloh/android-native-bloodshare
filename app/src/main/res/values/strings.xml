@@ -28,4 +28,20 @@
     <string name="enter_verification_code">Enter your verification code here</string>
     <string name="send">Send</string>
     <string name="does_not_get_the_code_resend">Doesn\'t get the code? <b>Resend</b></string>
+    <string name="donor_history">Donor History</string>
+    <string name="_5_gives_2_received">5 gives, 2 received</string>
+    <string name="_5_new_messages">5 New Messages</string>
+    <string name="message">Message</string>
+    <string name="_4_users_need_blood">4 users need blood</string>
+    <string name="blood_needed">Blood Needed</string>
+    <string name="search_donor_near_you">Search donor near you</string>
+    <string name="search_donor">Search Donor</string>
+    <string name="thanks">THANKS</string>
+    <string name="blood_received">BLOOD RECEIVED</string>
+    <string name="blood_give">BLOOD GIVE</string>
+    <string name="blood_type_a">Blood type: A</string>
+    <string name="agung_sepruloh">Agung Sepruloh</string>
+    <string name="_75">75</string>
+    <string name="_100">100</string>
+    <string name="_330">330</string>
 </resources>
