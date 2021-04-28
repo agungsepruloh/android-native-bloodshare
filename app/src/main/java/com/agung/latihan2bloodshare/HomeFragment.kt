@@ -6,26 +6,21 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
-import androidx.navigation.Navigation
-import com.agung.latihan2bloodshare.databinding.FragmentVerifyBinding
+import com.agung.latihan2bloodshare.databinding.FragmentHomeBinding
 
 /**
  * A simple [Fragment] subclass.
- * Use the [VerifyFragment.newInstance] factory method to
+ * Use the [HomeFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class VerifyFragment : Fragment() {
+class HomeFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
 
-        val binding = DataBindingUtil.inflate<FragmentVerifyBinding>(
-            inflater, R.layout.fragment_verify, container, false
-        )
-
-        binding.sendBtn.setOnClickListener(
-            Navigation.createNavigateOnClickListener(R.id.action_verifyFragment_to_homeFragment)
+        val binding = DataBindingUtil.inflate<FragmentHomeBinding>(
+            inflater, R.layout.fragment_home, container, false
         )
 
         return binding.root
