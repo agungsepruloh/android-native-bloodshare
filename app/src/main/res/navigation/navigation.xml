@@ -35,6 +35,6 @@
     <fragment
         android:id="@+id/verifyFragment"
         android:name="com.agung.latihan2bloodshare.VerifyFragment"
-        android:label="fragment_verify"
+        android:label="Verify"
         tools:layout="@layout/fragment_verify" />
 </navigation>

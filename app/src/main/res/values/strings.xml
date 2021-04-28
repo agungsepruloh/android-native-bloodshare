@@ -23,4 +23,9 @@
     <string name="almost_there">Almost There</string>
     <string name="greeting_after_registration">Thank you for registering with us. One more step, you need to check your email to activate your account.</string>
     <string name="verify">Verify</string>
+    <string name="verify_your_account">Verify Your Account</string>
+    <string name="sent_verification_code">We have send verification code to your email</string>
+    <string name="enter_verification_code">Enter your verification code here</string>
+    <string name="send">Send</string>
+    <string name="does_not_get_the_code_resend">Doesn\'t get the code? Resend</string>
 </resources>
